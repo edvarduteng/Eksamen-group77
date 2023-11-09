@@ -27,10 +27,12 @@ Grå
     padding: 0;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0);
+
+    left: 60px;
 }
 
 .navbar li {
-    float: left;
+    float: right;
 }
 
 .navbar li a {
@@ -64,6 +66,10 @@ Grå
 
     background-color: darkcyan;
     height: 100vh;
+}
+
+.grid-container > div{
+    padding: 100px;
 }
 
 .test1 {
