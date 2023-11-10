@@ -41,11 +41,27 @@ nav  {
     transform: translate(-50%, -50%);
 }
 
+.nav-logo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    float: none;
+    position: absolute;
+    top: 30px;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+.nav-logo img {
+    height: 70px;
+}
+
 .navbar li {
     float: left;
 }
 
-.navbar li a {
+nav a {
     display: block;
     color: white;
     text-align: center;
@@ -54,7 +70,7 @@ nav  {
     font-size: 1.3rem;
 }
 
-.navbar li a:hover {
+nav a:hover {
     color: rgb(46, 46, 46);
 }
 
@@ -70,7 +86,7 @@ nav  {
 
 .main-box {
     grid-column: 1/5;
-    grid-row: 1/3;
+    grid-row: 1/1;
 
     background-color: rgb(1, 174, 174);
     height: 90vh;
@@ -80,18 +96,29 @@ nav  {
     padding: 50px;
 }
 
-.test1 {
+.left-box {
     grid-column: 1/3;
-    grid-row: 3/3;
+    grid-row: 2/2;
 
     background-color: white;
+    height: 30vh;
+}
+
+.right-box {
+    grid-column: 3/5;
+    grid-row: 2/2;
+
+    background-color: white;
+    height: 30vh;
+}
+
+.wide-box {
+    grid-column: 1/5;
+    grid-row: 3/3;
+    background-color: grey;
     height: 100vh;
 }
 
-.test2 {
-    grid-column: 3/5;
-    grid-row: 3/3;
-
-    background-color: white;
-    height: 100vh;
+.img-inside-box {
+    width: 300px;
 }
