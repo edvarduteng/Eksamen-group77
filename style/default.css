@@ -20,19 +20,22 @@ body {
 
 /* nav-bar*/
 
-.navbar {
+nav  {
     position: absolute;
+    background-color: rgb(1, 174, 174);
+    width: 100%;
+}
+.navbar {
+    position: relative;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0);
-
-    left: 60px;
+    left: 15px;
 }
 
 .navbar li {
-    float: right;
+    float: left;
 }
 
 .navbar li a {
@@ -62,7 +65,7 @@ body {
     grid-column: 1/5;
     grid-row: 1/3;
 
-    background-color: rgb(1, 174, 174);
+    background-color: white;
     height: 80vh;
 }
 
