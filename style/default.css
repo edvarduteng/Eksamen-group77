@@ -107,8 +107,8 @@ article {
     height: 90vh;
 }
 
-.main-box h1,
-p {
+.main-box>h1,
+.main-box>p {
     position: relative;
     top: 30%;
     text-align: center;
@@ -200,7 +200,7 @@ footer {
     .footer-middle {
         grid-column: 2/3;
         grid-row: 3;
-        
+
         display: table-cell;
     }
 
