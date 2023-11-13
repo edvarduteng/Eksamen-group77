@@ -98,7 +98,7 @@ article {
     padding: 25px;
 }
 
-.main-box {
+.top-box {
     grid-column: 1/5;
     grid-row: 1/2;
 
@@ -107,8 +107,8 @@ article {
     height: 90vh;
 }
 
-.main-box>h1,
-.main-box>p {
+.top-box>h1,
+.top-box>p {
     position: relative;
     top: 30%;
     text-align: center;
@@ -141,7 +141,7 @@ article {
     height: 100vh;
 }
 
-.small-box {
+.bottom-box {
     grid-column: 1/5;
     grid-row: 4/5;
 
@@ -153,7 +153,7 @@ article {
 
 }
 
-.small-box>div {
+.bottom-box>div {
     width: 10vw;
     height: 15vw;
     background-color: rgb(0, 132, 255);
