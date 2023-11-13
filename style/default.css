@@ -23,7 +23,7 @@ h2 {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: 3px;
-    text-decoration-color: rgb(0, 64, 104);
+    text-decoration-color: rgb(0, 132, 255);
 }
 
 /* nav-bar*/
@@ -94,6 +94,8 @@ nav a:hover {
     background-color: rgb(0, 132, 255);
     color: white;
     height: 90vh;
+
+    text-align: center;
 }
 
 .left-box {
