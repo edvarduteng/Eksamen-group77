@@ -54,7 +54,7 @@ nav {
     position: absolute;
     top: 30px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -20%);
 }
 
 .nav-logo {
@@ -67,7 +67,7 @@ nav {
     position: absolute;
     top: 30px;
     left: 10%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -20%);
 }
 
 .nav-logo img {
