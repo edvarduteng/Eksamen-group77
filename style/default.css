@@ -254,6 +254,7 @@ footer a {
         background-image: url(../media/oslomet-logo.png);
         background-size: cover;
         height: 100px;
+        width: 100px;
     }
 
     .hamburger-toggle-container {cursor:pointer;}
@@ -262,9 +263,14 @@ footer a {
         height: 0px;
         overflow: hidden;
     }
+
     #burger-toggle:checked ~ .menu li {
         height: 1rem;
         width: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+        background-color: var(--siteburgundy);
     }
 
     nav {
