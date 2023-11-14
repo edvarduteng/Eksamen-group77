@@ -14,6 +14,7 @@ TA SPØRSMÅL:
     - article riktig? ja
 
     -   Kan jeg bruke en tom <span> tag for å gjøre div til link
+    -   Kan jeg centrere bottom box divene sånn
 */
 body {
     margin: 0px;
@@ -43,13 +44,11 @@ hr {
 nav {
     position: absolute;
     width: 100%;
-    
 }
 
 .navbar {
     list-style-type: none;
     margin: 10px;
-    overflow: hidden;
 
     float: right;
     position: absolute;
@@ -178,6 +177,8 @@ article {
     justify-content: space-around;
     align-items: center;
     align-content: center;
+
+    text-align: center;
 }
 
 .bottom-box>div {
@@ -186,9 +187,7 @@ article {
     min-width: 150px;
     height: 150px;
 
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt5XEqHXfhBVImtC3AdNhoyYrLxqn9vn7iew&usqp=CAU");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,132,255,1) 200%);
 
     margin: 10px;
     display: flex;
@@ -202,6 +201,15 @@ article {
     left: 0;
 
     z-index: 1;
+}
+
+.bottom-box i {
+    position: absolute;
+    text-align: center;
+    
+    top: 75px;
+    left: 57px;
+    
 }
 
 /* GRID */
@@ -291,11 +299,7 @@ nav input {
     .menu-icon {
         position: absolute;
         transform: translate(80vw, 30px);
-
         display: block;
-        
-        /*background-image: url("https://static.thenounproject.com/png/703781-200.png");
-        */
         background-repeat: no-repeat;
         background-position: center;
         
@@ -323,11 +327,9 @@ nav input {
     #burger-toggle:checked ~ .navbar li {
         float: right;
         height: 1rem;
-        width: auto;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-bottom: 0.5rem;
-        
+        width: 140px;
+        padding: 0.5rem;
+        border-radius: 0px;
     }
 
     nav {
