@@ -165,6 +165,7 @@ article {
 }
 
 .bottom-box>div {
+    position: relative;
     
     min-width: 150px;
     height: 150px;
@@ -262,27 +263,45 @@ footer a {
 
 /* Hamburger Menu */
 
-@media (max-width: 700px){
+nav input {
+    display: none;
+}
+
+.menu-icon i {
+    font-size: 0rem;
+}
+
+@media (max-width: 670px){
     .menu-icon {
         position: absolute;
-        transform: translate(70vw, 0%);
+        transform: translate(80vw, 30px);
 
         display: block;
-        background-image: url("https://static.thenounproject.com/png/703781-200.png");
+        
+        /*background-image: url("https://static.thenounproject.com/png/703781-200.png");
+        */
         background-repeat: no-repeat;
         background-position: center;
-        height: 100px;
-        width: 100px;
+        
+    }
+
+    .menu-icon i {
+        font-size: 2rem;
     }
 
     .hamburger-toggle-container {cursor:pointer;}
+
+    .navbar {
+        transform: translate(-30%, -20%); /*overskirver*/
+    }
 
     .navbar li {
         height: 0px;
         overflow: hidden;
         float: none; /* OVERSKRIVER!!!!*/
-        margin: 10px;
+        margin: 0px;
         text-align: right;
+        background-color: rgba(0, 47, 91, 0.299);
     }
 
     #burger-toggle:checked ~ .navbar li {
