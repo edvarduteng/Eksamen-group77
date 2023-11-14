@@ -4,6 +4,10 @@ TA SPØRSMÅL:
     - hvem skal være h1.
     - skal RIGHT-BOX BARE VÆRE i media eller utenfor også.
     - bruke <img> tag eller background image.
+    - kan jeg ha en tom <li></li> for å ha et mellomrom i en liste.
+    - kan jeg lage boksene på hovedsiden som bare diver uten grid.
+    - Logo filen er litt større en bilde i css.
+    - skal footer ligge nederst i forhold til css struktur og at media må i bunden men tags skal på toppen.
 
 Color palette
 
@@ -71,7 +75,7 @@ nav {
 }
 
 .nav-logo img {
-    height: 70px;
+    height: 50px;
 }
 
 .navbar li {
@@ -88,10 +92,8 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: 2px;
-    text-decoration-color: black;
+    background-color: rgb(0, 115, 240);
+    border-radius: 15px;
 }
 .active {
     text-decoration-line: underline;
