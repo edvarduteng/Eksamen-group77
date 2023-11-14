@@ -249,5 +249,26 @@ footer a {
 /* Hamburger Menu */
 
 @media (max-width: 700px){
-    .menu
+    .menu-icon {
+        display: block;
+        background-image: url(../media/oslomet-logo.png);
+        background-size: cover;
+        height: 100px;
+    }
+
+    .hamburger-toggle-container {cursor:pointer;}
+
+    .menu li {
+        height: 0px;
+        overflow: hidden;
+    }
+    #burger-toggle:checked ~ .menu li {
+        height: 1rem;
+        width: auto;
+    }
+
+    nav {
+        display: flex;
+        height: 40px;
+    }
 }
