@@ -8,6 +8,7 @@ TA SPØRSMÅL:
     - kan jeg lage boksene på hovedsiden som bare diver uten grid.
     - Logo filen er litt større en bilde i css.
     - skal footer ligge nederst i forhold til css struktur og at media må i bunden men tags skal på toppen.
+    - kan jeg overskrive en verdi hvis den er inne i en @media quarry
 
 Color palette
 
@@ -50,14 +51,26 @@ nav {
 .navbar {
     list-style-type: none;
     margin: 10px;
-    padding: 0;
     overflow: hidden;
 
-    float: none;
+    float: right;
     position: absolute;
     top: 30px;
     left: 50%;
     transform: translate(-50%, -20%);
+}
+
+.navbar li {
+    float: left;
+}
+
+nav a {
+    
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 1.3rem;
 }
 
 .nav-logo {
@@ -75,19 +88,6 @@ nav {
 
 .nav-logo img {
     height: 50px;
-}
-
-.navbar li {
-    float: left;
-}
-
-nav a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    font-size: 1.3rem;
 }
 
 nav a:hover {
@@ -250,27 +250,35 @@ footer a {
 
 @media (max-width: 700px){
     .menu-icon {
+        position: absolute;
+        transform: translate(400%, 0%);
+
         display: block;
-        background-image: url(../media/oslomet-logo.png);
-        background-size: cover;
+        background-image: url("https://static.thenounproject.com/png/703781-200.png");
+        background-repeat: no-repeat;
+        background-position: center;
         height: 100px;
         width: 100px;
     }
 
     .hamburger-toggle-container {cursor:pointer;}
 
-    .menu li {
+    .navbar li {
         height: 0px;
         overflow: hidden;
+        float: none; /* OVERSKRIVER!!!!*/
+        margin: 10px;
+        text-align: right;
     }
 
-    #burger-toggle:checked ~ .menu li {
+    #burger-toggle:checked ~ .navbar li {
+        float: right;
         height: 1rem;
         width: auto;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         padding-bottom: 0.5rem;
-        background-color: var(--siteburgundy);
+        
     }
 
     nav {
