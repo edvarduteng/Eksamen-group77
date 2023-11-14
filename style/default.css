@@ -1,28 +1,17 @@
 /*
 
 TA SPØRSMÅL:
-    - hvem skal være h1.
-    - skal RIGHT-BOX BARE VÆRE i media eller utenfor også.
-    - bruke <img> tag eller background image.
-    - kan jeg ha en tom <li></li> for å ha et mellomrom i en liste.
-    - kan jeg lage boksene på hovedsiden som bare diver uten grid.
-    - Logo filen er litt større en bilde i css.
-    - skal footer ligge nederst i forhold til css struktur og at media må i bunden men tags skal på toppen.
-    - kan jeg overskrive en verdi hvis den er inne i en @media quarry
+    - hvem skal være h1. begge
+    - skal RIGHT-BOX BARE VÆRE i media eller utenfor også. R
+    - bruke <img> tag eller background image. R
+    - kan jeg ha en tom <li></li> for å ha et mellomrom i en liste. hr
 
-Color palette
-
-Hoved svart
-    rgba(rgba(68,76,78,255)
-
-Rød
-    rgba(228,97,86,255)
-
-Gul 
-    rgba(232,155,19,255)
-
-Grå
-    rgba(119,128,133,255)
+    - kan jeg lage boksene på hovedsiden som bare diver uten grid. TJA FLEX
+    - Logo filen er litt større en bilde i css. OK
+    - skal footer ligge nederst i forhold til css struktur og at media må i bunden men tags skal på toppen. TJA
+    - kan jeg overskrive en verdi hvis den er inne i en @media quarry JA tror det
+    - navbar og nav-logo er jævlig like... classe
+    - article riktig? ja
 */
 body {
     margin: 0px;
@@ -250,7 +239,7 @@ footer a {
 @media (max-width: 700px){
     .menu-icon {
         position: absolute;
-        transform: translate(400%, 0%);
+        transform: translate(70vw, 0%);
 
         display: block;
         background-image: url("https://static.thenounproject.com/png/703781-200.png");
