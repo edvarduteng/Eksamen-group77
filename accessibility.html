@@ -5,17 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/default.css">
+
+    <script src="https://kit.fontawesome.com/b261370eb8.js" crossorigin="anonymous"></script>
     <title>Forside</title>
 </head>
 
-<body>
+<body>      
     <header>
         <nav>
+            <input id="burger-toggle" type="checkbox">
+            <label class="hamburger-toggle-container" for="burger-toggle">
+                <div class="menu-icon"><i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i></div>
+            </label>
             <a href="index.html" class="nav-logo"><img src="media/oslomet-logo.png" alt="OsloMet logo"></a>
 
-            <ul class="navbar">
-                <li><a href="index.html">Index</a></li>
-                <li><a href="accessibility.html" class="active">Accessibility</a></li>
+            <ul class="navbar menu">
+                <li><a href="index.html" class="active">Index</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
                 <li><a href="topical.html">Topical</a></li>
                 <li><a href="bibliotek.html">Bibliotek</a></li>
                 <li><a href="kantine.html">Kantine</a></li>
@@ -58,12 +64,7 @@
             </p>
         </article>
 
-        <div class="bottom-box">
-            <div><a href="accessibility.html">Accessibility</a></div>
-            <div><a href="topical.html">Topical</a></div>
-            <div><a href="bibliotek.html">Bibliotek</a></div>
-            <div><a href="kantine.html">Kantine</a></div>
-        </div>
+        <div class="bottom-box"></div>
     </main>
 
     <footer>
