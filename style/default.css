@@ -83,6 +83,8 @@ nav a {
     text-decoration-color: black;
 }
 
+/* parallax effekten er hentet fra W3Schools https://www.w3schools.com/howto/howto_css_parallax.asp */
+
 .parallax {
     /* The image used */
     background-image: url(../media/bibliotek-1.jpg);
