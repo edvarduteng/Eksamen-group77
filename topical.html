@@ -12,21 +12,29 @@
 
 <body>
     <header>
-        <nav>
-            <input id="burger-toggle" type="checkbox">
+        <input id="burger-toggle" type="checkbox">
+        <nav class="navbar">
             <label class="hamburger-toggle-container" for="burger-toggle">
-                <div class="menu-icon"><i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i></div>
+                <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
             </label>
-            <a href="index.html" class="nav-logo"><img src="media/oslomet-logo.png" alt="OsloMet logo"></a>
-
-            <ul class="navbar menu">
-                <li><a href="index.html" class="active">Index</a></li>
+            <ul class="default-list">
+                <li><a href="index.html">Index</a></li>
                 <li><a href="accessibility.html">Accessibility</a></li>
-                <li><a href="topical.html">Topical</a></li>
                 <li><a href="bibliotek.html">Bibliotek</a></li>
                 <li><a href="kantine.html">Kantine</a></li>
             </ul>
+            <a href="index.html" class="nav-logo"><img src="media/oslomet-logo.png" alt="OsloMet logo"></a>
         </nav>
+
+        <!-- I have put this outside tha <nav> tag because it has position absoulute and therefore does not work inside the nav tag -->
+        <div class="hamburger-list-container">
+            <ul class="hamburger-list">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="bibliotek.html">Bibliotek</a></li>
+                <li><a href="kantine.html">Kantine</a></li>
+            </ul>
+        </div>
 
     </header>
     <main class="grid-container">

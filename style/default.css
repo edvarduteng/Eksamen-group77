@@ -72,12 +72,8 @@ input {
 }
 
 .hamburger-list li {
-    padding: 9px;
-}
-
-.hamburger-list a {
-    padding: 1;
-    background-color: rgb(0, 132, 255);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.358);
 }
 
 .default-list a, .hamburger-list a {
