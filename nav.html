@@ -2,14 +2,34 @@
 
 <head>
     <style>
-        .nav {
+        /*----NAVBAR----*/
+        input {
+            display: none;
+        }
+
+        .default-nav-liste a, .hamburger-liste a {
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+
+        .default-nav-liste a:hover, .hamburger-liste a:hover {
+            background-color: rgba(0, 0, 0, 0.178);
+        }
+
+        .navbar {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
+
+            padding: 10px;
+            background-color: rgb(0, 132, 255);
         }
 
-        .liste {
+        .default-nav-liste {
             display: flex;
             flex-direction: row;
             gap: 20px;
@@ -18,29 +38,42 @@
             padding: 0;
         }
 
-        .hamburger-liste{
+        .toggle-div {
             display: none;
         }
 
-        .hide {
-            display: none;
+        .hamburger-liste {
+            flex-direction: column;
+            gap: 20px;
+            list-style-type: none;
+            margin: 0;
+            padding-left: 22vw;
+        }
+
+        .hamburger-liste a {
+            padding: 1;
+            background-color: rgb(0, 132, 255);
         }
 
         .hamburger-toggle-container {
-            cursor: pointer;
-        }
-
-        #burger-toggle:checked ~ .hamburger-liste {
-            display: block;
+            display: none;
         }
 
         @media (max-width:670px) {
-            .hide {
+            .hamburger-toggle-container {
                 display: block;
             }
 
-            .liste {
+            .default-nav-liste {
                 display: none;
+            }
+
+            .hamburger-toggle-container {
+                cursor: pointer;
+            }
+
+            #burger-toggle:checked~.toggle-div {
+                display: block;
             }
         }
     </style>
@@ -49,27 +82,24 @@
 
 <body>
     <input id="burger-toggle" type="checkbox">
-    <nav class="nav">
-        <a href="index.html" class="nav-logo"><img src="media/oslomet-logo.png" alt="OsloMet logo"></a>
-        <ul class="liste">
-            <li>Index</li>
-            <li>Page 2</li>
-            <li>Page 3</li>
-            <li>Page 4</li>
+    <nav class="navbar">
+        <label class="hamburger-toggle-container" for="burger-toggle">
+            <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
+        </label>
+        <ul class="default-nav-liste">
+            <li><a href="index.html">Index</a></li>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="index.html">Index</a></li>
         </ul>
-        <div class="hide">
-            <label class="hamburger-toggle-container" for="burger-toggle">
-                <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
-            </label>
-            
-        </div>
+        <a href="index.html" class="nav-logo"><img src="media/oslomet-logo.png" alt="OsloMet logo"></a>  
     </nav>
-    <div>
+    <div class="toggle-div">
         <ul class="hamburger-liste">
-            <li>Index</li>
-            <li>Page 2</li>
-            <li>Page 3</li>
-            <li>Page 4</li>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="index.html">Index</a></li>
         </ul>
     </div>
 </body>
