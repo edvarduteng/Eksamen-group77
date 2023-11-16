@@ -39,6 +39,12 @@ hr {
     border-color: black;
 }
 
+.parallax-text {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
 /*----NAVBAR----*/
 input {
     display: none;
@@ -125,8 +131,6 @@ input {
 /* parallax effekten er hentet fra W3Schools https://www.w3schools.com/howto/howto_css_parallax.asp */
 
 .parallax {
-    /* The image used */
-    background-image: url(../media/bibliotek-1.jpg);
   
     /* Full height */
     height: 100%; 
@@ -138,6 +142,18 @@ input {
     background-size: cover;
   }
 
+  #parallax-index-bilde {
+    /* The image used */
+    background-image: url(../media/OsloMet_Bygg1.JPG);
+    background-position-y: -250px;
+
+  }
+
+  #parallax-bibliotek-bilde {
+    /* The image used */
+    background-image: url(../media/bibliotek-1.jpg);
+
+  }
 /*--------------------------------*/
 
 /* main-grid */
