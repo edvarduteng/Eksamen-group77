@@ -39,43 +39,77 @@ hr {
     border-color: black;
 }
 
-/* nav-bar*/
+/*----NAVBAR----*/
+input {
+    display: none;
+}
 
 .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+
+    padding: 10px;
+    background-color: rgb(0, 132, 255);
 }
 
-.navbar li {
-    float: left;
+.default-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-nav a {
+.hamburger-list {
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 22vw;
+}
+
+.hamburger-list a {
+    padding: 1;
+    background-color: rgb(0, 132, 255);
+}
+
+.default-list a, .hamburger-list a {
     color: black;
     text-align: center;
-    padding: 14px;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    padding: 10px;
 }
 
-.nav-logo {
-    list-style-type: none;
-    margin: 10px;
-    padding: 0;
-    overflow: hidden;
-    transform: translate(-50%, -20%);
+.default-list a:hover, .hamburger-list a:hover {
+    background-color: rgba(0, 0, 0, 0.178);
 }
 
-.nav-logo img {
-    height: 50px;
+.hamburger-toggle-container, .hamburger-list-container {
+    display: none;
 }
 
-.navbar a:hover {
-    background-color: rgb(0, 115, 240);
-    border-radius: 15px;
+@media (max-width:670px) {
+    .hamburger-toggle-container {
+        display: block;
+    }
+
+    .default-list {
+        display: none;
+    }
+
+    .hamburger-toggle-container {
+        cursor: pointer;
+    }
+
+    #burger-toggle:checked~.hamburger-list-container {
+        display: block;
+    }
 }
+
 .active {
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -267,53 +301,5 @@ footer a {
         display: table;
         table-layout: fixed;
         border-spacing: 20px;
-    }
-}
-
-/* Hamburger Menu */
-
-nav input {
-    display: none;
-}
-
-.menu-icon i {
-    font-size: 0rem;
-}
-
-@media (max-width: 670px){
-    .menu-icon {
-        position: absolute;
-        transform: translate(80vw, 30px);
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center;
-        
-    }
-
-    .menu-icon i {
-        font-size: 2rem;
-    }
-
-    .hamburger-toggle-container {cursor:pointer;}
-
-    .navbar {
-        transform: translate(-30%, -20%); /*overskirver*/
-        flex-direction: ;
-    }
-
-    .navbar li {
-        height: 0px;
-        overflow: hidden;
-        float: none; /* OVERSKRIVER!!!!*/
-        margin: 0px;
-        text-align: right;
-        background-color: rgba(0, 47, 91, 0.299);
-    }
-
-    
-
-    nav {
-        display: flex;
-        height: 40px;
     }
 }
