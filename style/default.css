@@ -39,10 +39,14 @@ hr {
     border-color: black;
 }
 
-.parallax-text {
-    color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+.heading-container {
+    width: 50vw;
+    transform: translate(0, 20vh);
+    margin: auto;
+
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(0, 132, 255);
 }
 
 /*----NAVBAR----*/
@@ -145,8 +149,6 @@ input {
   #parallax-index-bilde {
     /* The image used */
     background-image: url(../media/OsloMet_Bygg1.JPG);
-    background-position-y: -250px;
-
   }
 
   #parallax-bibliotek-bilde {
@@ -169,16 +171,10 @@ article {
 
     background-color: rgb(0, 132, 255);
     color: black;
-    height: 100vh;
+    height: 80vh;
     min-height: 500px;
 }
 
-.top-box>h1,
-.top-box>p {
-    position: relative;
-    top: 30%;
-    text-align: center;
-}
 
 .left-box {
     grid-column: 1/3;
