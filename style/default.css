@@ -41,7 +41,7 @@ hr {
 
 .heading-container {
     width: 50vw;
-    transform: translate(0, 20vh);
+    transform: translate(0, 30vh);
     margin: auto;
 
     text-align: center;
@@ -83,7 +83,7 @@ input {
 
 .hamburger-list li {
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.358);
+    background-color: rgba(0, 132, 255, 0.85);
 }
 
 .default-list a, .hamburger-list a {
@@ -95,12 +95,13 @@ input {
 }
 
 .default-list a:hover, .hamburger-list a:hover {
-    background-color: rgba(0, 0, 0, 0.178);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .hamburger-list-container {
     display: none;
     position: absolute;
+    z-index: 1;
 }
 
 .hamburger-toggle-container {
