@@ -249,7 +249,7 @@ in a centered vertical flex box*/
 
 /* adds a shadow and runs a 1sec long animation once. */
 .bottom-icon:hover {
-    box-shadow: 0px 0px 100px blue;
+    box-shadow: 0px 0px 100px rgb(0, 132, 255);
 
     animation: rotate 1s;
     animation-iteration-count: 1;
