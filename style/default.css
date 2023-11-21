@@ -60,6 +60,10 @@ is borrowed by .hambuger-toggle-container*/
     display: none;
 }
 
+#nav-logo {
+    width: 120px;
+}
+
 /*makes its child elements display evenely in a horizontal flex*/
 .navbar {
     display: flex;
