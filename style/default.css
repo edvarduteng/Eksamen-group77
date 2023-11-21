@@ -48,7 +48,6 @@ is borrowed by .hambuger-toggle-container*/
 .nav-logo img {
     height: 62px;
     width: 105;
-    
 }
 
 /*makes its child elements display evenely in a horizontal flex*/
@@ -62,64 +61,81 @@ is borrowed by .hambuger-toggle-container*/
     background-color: rgb(0, 132, 255);
 }
 
+/*aligns and adds air between the navbar list elements 
+in a flex. also styles the links*/
 .default-list {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-.hamburger-list {
-    flex-direction: column;
-    gap: 20px;
     list-style-type: none;
+}
+/*sorts its children in a vertical flex box.*/
+.hamburger-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
     margin: 0;
     padding-left: 22vw;
 }
 
+/* Adds padding and background color from the list. 
+Removes dots on the <ul> tag*/
 .hamburger-list li {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.85);
+    list-style-type: none;
 }
-
+/*centers and scales the links aswell as
+removing the default <a> tag styling*/
 .default-list a, .hamburger-list a {
     text-align: center;
-    text-decoration: none;
     font-size: 1.5rem;
     padding: 10px;
     color: black;
+    text-decoration: none;
 }
 
+/*adds a dark circle to the link u are hovering 
+over in the navbar*/
 .default-list a:hover, .hamburger-list a:hover {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 }
 
+/*Hides the hamburger list by default.
+And give it an z-index of 1 to make sure the navbar does not
+appear behind the heading*/
 .hamburger-list-container {
     display: none;
     position: absolute;
     z-index: 1;
 }
-
+/*Hides the hamburger toggle icon by default*/
 .hamburger-toggle-container {
     display: none;
 }
 
 @media (max-width:785px) {
+    /*gives the user the ability to open the hamburger menu 
+    and hides the default navbar since it is no 
+    longer funtionall*/
     .hamburger-toggle-container {
         display: block;
     }
-
     .default-list {
         display: none;
     }
 
+    /*shows the user that this element is clickeball
+    by changing the cursor to a pointer*/
     .hamburger-toggle-container {
         cursor: pointer;
     }
 
+    /*shows the hamburger menu when the user clicks the 
+    hamburger icon*/
     #burger-toggle:checked~.hamburger-list-container {
         display: block;
     }
@@ -132,7 +148,9 @@ what page u are on*/
     border-radius: 15px;
 }
 
-/* parallax effekten er hentet fra W3Schools https://www.w3schools.com/howto/howto_css_parallax.asp */
+/*----------Parallax effect-----------------
+parallax effekten er hentet fra W3Schools 
+https://www.w3schools.com/howto/howto_css_parallax.asp */
 
 .parallax {
   
@@ -160,7 +178,7 @@ what page u are on*/
     /* The image used */
     background-image: url(../media/kantine-p35.webp);
   }
-/*--------------------------------*/
+/*-----------GRID----------------*/
 
 .grid-container>div,
 article {
@@ -172,7 +190,7 @@ article {
 }
 
 
-/*small image*/
+/*-----------small image------------*/
 
 /*sets the height of elements with this class.
 used to make images larger when the curser hovers
@@ -186,14 +204,18 @@ the functinality is only borrowed by image-toggle-container*/
 #image-toggle {
     display: none;
 }
-
+/*pushes the enlarge symbol to the corner of the picture*/
 .image-toggle-container i {
     padding-right: 300px;
 }
 
 /*styles a div so its a slightly transparent black div
-that covers the entire screen*/
-.background-overlay {
+that covers the entire screen.
+sets the z-index to 2 so it appears between the hamburger
+list and the big picture
+*/
+.black-background {
+    z-index: 2;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -204,13 +226,13 @@ that covers the entire screen*/
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-/*makes the cursor a pointer when hovered over to 
-show the user that the element is clickable.
+/*turns the cursor into a pointer when hovered over the element 
+to show the user that the element is clickable.
 Also uses the z-index to make sure the toggle button
 always is visible on top and always clickable*/
 .image-toggle-container {
     cursor: pointer;
-    z-index: 3;
+    z-index: 4;
     color: green;
 }
 
@@ -232,22 +254,26 @@ always under the close button.
 Also centers the image and sets the height depending 
 on the width of the browser window*/
 .img-big {
-    z-index: 2;
+    z-index: 3;
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
     height: 40vw;
 }
 
+/*shows the big image and hides the small image 
+when "#image-toggle" is toggled.*/
 #image-toggle:checked~ .img-big-container {
     display: block;
 }
-
 #image-toggle:checked~ .img-small-container {
     display: none;
 }
 
+/*styles the toggle button to signal to the user that now it
+closes the image, and repositions it a more fitting place*/
 #image-toggle:checked~ .image-toggle-container {
     position: fixed;
     left: 20px;
