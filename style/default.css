@@ -1,21 +1,3 @@
-/*
-TA SPØRSMÅL:
-    - hvem skal være h1. begge
-    -   skal RIGHT-BOX BARE VÆRE i media eller utenfor også. R
-    - bruke <img> tag eller background image. R
-    - kan jeg ha en tom <li></li> for å ha et mellomrom i en liste. hr
-    - article riktig? ja
-    - Logo filen er litt større en bilde i css. OK
-
-    -   kan jeg lage boksene på hovedsiden som bare diver uten grid. TJA FLEX
-    -   skal footer ligge nederst i forhold til css struktur og at media må i bunden men tags skal på toppen. TJA
-    -   kan jeg overskrive en verdi hvis den er inne i en @media quarry JA tror det
-    -   navbar og nav-logo er jævlig like... classe
-    -   Kan jeg bruke en tom <span> tag for å gjøre div til link
-    -   Kan jeg centrere bottom box divene sånn
-    -   background-color på nav?
-*/
-
 /*sets the margin of body to zero to make sure there
 are no gaps on the edges of the page.
 Also defines the font for the whole page*/
@@ -27,7 +9,6 @@ body {
 /*sets the size of the h1 tags*/
 h1 {
     font-size: 2.5rem;
-    font-weight: 700;
 }
 
 /* adds a line under all h2 tags*/
