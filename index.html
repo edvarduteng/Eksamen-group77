@@ -18,7 +18,7 @@
         <input id="burger-toggle" type="checkbox">
         <nav class="navbar">
             <label class="hamburger-toggle-container" for="burger-toggle">
-                <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
+                <i class="fa-solid fa-bars fa-2xl"></i>
             </label>
             <ul class="default-list">
                 <li><a href="index.html" class="active">Home</a></li>
@@ -51,9 +51,19 @@
             </div>
         </div>
         <div class="left-box">
-            <picture>
-                <img class="img-inside-box" src="media/bygg-p35.webp" alt="Oslo pilestredet 32 bygg">
-            </picture>
+            <input id="image-toggle" type="checkbox">
+
+            <label class="image-toggle-container" for="image-toggle">
+                <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+            </label>
+
+            <div class="img-container">
+                <picture>
+                    <source media="(min-width:300px)" srcset="media/bygg-p35-big.webp">
+                    <img class="img-inside-box" src="media/bygg-p35.webp" alt="Oslo pilestredet 32 bygg">
+                </picture>
+            </div>
+
             <p>Foto: Privat</p>
         </div>
 

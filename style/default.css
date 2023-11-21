@@ -185,11 +185,37 @@ article {
 }
 
 .img-inside-box {
+    height: 100%;
+}
+
+.img-container {
     height: 35vh;
 }
 
-.img-inside-box:hover {
+.img-container:hover {
     height: 40vh;
+}
+
+
+#image-toggle {
+    display: none;
+}
+
+.image-toggle-container {
+    cursor: pointer;
+    z-index: 1;
+}
+.image-toggle-container i {
+    color: #0084ff;
+    padding-left: 300px;
+}
+
+#image-toggle:checked~.img-container {
+    position: fixed;
+    height: 720px;  
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*styles the boxes*/
