@@ -191,17 +191,18 @@ article {
     height: 40vh;
     width: 50vw;
 
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .img-inside-box {
-    height: 40vh;
+    height: 35vh;
 }
 
 .img-inside-box:hover {
-    height: 45vh;
+    height: 40vh;
 }
 
 /* specifies article-box's position in the grid and forces 
