@@ -60,8 +60,8 @@ is borrowed by .hambuger-toggle-container*/
     display: none;
 }
 
-#nav-logo img {
-    width: 120px;
+.nav-logo img {
+    width: 100px;
 }
 
 /*makes its child elements display evenely in a horizontal flex*/
