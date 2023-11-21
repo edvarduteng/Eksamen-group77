@@ -182,8 +182,7 @@ article {
     height: 40vh;
 }
 
-/*styles the boxes and makes its child elements display 
-in a centered vertical flex box*/
+/*styles the boxes*/
 .bottom-icon {
     display: flex;
     position: relative;
