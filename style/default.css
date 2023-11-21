@@ -211,8 +211,8 @@ space between the edges and the content of the box*/
     grid-row: 3/4;
 
     background-color: rgb(231, 231, 231);
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 
 /*----bottom boxes----*/
