@@ -208,6 +208,10 @@ space between the edges and the content of the box*/
     padding-right: 15vw;
 }
 
+#references-list li {
+    padding: 10px;
+}
+
 /*----bottom boxes----*/
 /*specifies bottom-box's grid positions and makes its child 
 elements display in a horizontal flex box*/
