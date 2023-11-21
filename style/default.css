@@ -38,6 +38,7 @@ hr {
     border-width: 1px;
     border-style: solid;
     border-color: black;
+    width: 90%;
 }
 
 /* centers the element horizontally and sets its height 
@@ -156,12 +157,12 @@ is borrowed by .hambuger-toggle-container*/
 
   #parallax-index-bilde {
     /* The image used */
-    background-image: url(../media/Oslomet-bygg-p32.webp);
+    background-image: url(../media/bygg-p32.webp);
   }
 
   #parallax-bibliotek-bilde {
     /* The image used */
-    background-image: url(../media/oslomet-bibliotek-p35-lokaler.webp);
+    background-image: url(../media/bibliotek-p35-lokaler.webp);
   }
 /*--------------------------------*/
 
@@ -325,7 +326,7 @@ footer a {
 
 .footer-left {
     grid-column: 1/2;
-    grid-row: 3;
+    grid-row: 1;
 
     display: table-cell;
 }
@@ -334,14 +335,14 @@ footer a {
 
     .footer-middle {
         grid-column: 2/3;
-        grid-row: 3;
+        grid-row: 1;
 
         display: table-cell;
     }
 
     .footer-right {
         grid-column: 3/4;
-        grid-row: 3;
+        grid-row: 1;
 
         display: table-cell;
     }
