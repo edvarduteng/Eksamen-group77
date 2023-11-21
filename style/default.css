@@ -187,6 +187,10 @@ article {
 
 /*small image*/
 
+.img-hover-effect:hover {
+    height: 40vh;
+}
+
 #image-toggle {
     display: none;
 }
@@ -214,10 +218,6 @@ article {
 
 .img-small-box {
     height: 35vh;
-}
-
-.img-small-box:hover {
-    height: 40vh;
 }
 
 .img-big-container {
