@@ -9,7 +9,6 @@ body {
 /*sets the size of the h1 tags*/
 h1 {
     font-size: 2.5rem;
-    font-weight: 700;
 }
 
 /* adds a line under all h2 tags*/
