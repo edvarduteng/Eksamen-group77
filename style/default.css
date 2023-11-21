@@ -65,7 +65,9 @@ is borrowed by .hambuger-toggle-container*/
 }
 
 .nav-logo img {
-    width: 100px;
+    height: 62px;
+    width: 105;
+    
 }
 
 /*makes its child elements display evenely in a horizontal flex*/
@@ -231,9 +233,12 @@ always is visible on top and always clickable*/
     color: green;
 }
 
-/*sets the height of the image*/
+/*sets the height and aspect ratio of the image in order 
+to set an explicit width and height on image elements 
+to reduce layout shifts and improve CLS.*/
 .img-small {
     height: 35vh;
+    aspect-ratio: 1.33;
 }
 
 /*hides the big image by default*/
