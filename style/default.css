@@ -177,25 +177,26 @@ is borrowed by .hambuger-toggle-container*/
 
 .grid-container>div,
 article {
-    padding: 30px;
+    padding: 40px;
 }
 
 #references-list li {
     padding: 10px;
 }
 
-.img-inside-box {
-    height: 100%;
-}
 
-.img-container {
+/*small image*/
+.img-inside-box {
     height: 35vh;
 }
 
-.img-container:hover {
+.img-inside-box:hover {
     height: 40vh;
 }
 
+.img-outside-box {
+    height: 90vh;
+}
 
 #image-toggle {
     display: none;
@@ -203,20 +204,42 @@ article {
 
 .image-toggle-container {
     cursor: pointer;
-    z-index: 1;
-}
-.image-toggle-container i {
-    color: #0084ff;
-    padding-left: 300px;
+    z-index: 3;
 }
 
-#image-toggle:checked~.img-container {
+.fa-up-right-and-down-left-from-center {
+    padding-left: 300px;
+    display: block;
+}
+
+.img-outside-container {
+    display: none;
+}
+
+.img-outside-box {
+    z-index: 2;
     position: fixed;
-    height: 720px;  
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+#image-toggle:checked~ .img-outside-container {
+    display: block;
+}
+
+#image-toggle:checked~ .img-inside-container {
+    display: none;
+}
+
+#image-toggle:checked~ .image-toggle-container {
+    position: fixed;
+    left: 82%;
+    top: 10%;
+    transform: translate(-50%, -50%);   
+}
+
+
 
 /*styles the boxes*/
 .bottom-icon {
