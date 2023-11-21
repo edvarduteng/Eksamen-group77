@@ -164,6 +164,11 @@ is borrowed by .hambuger-toggle-container*/
     /* The image used */
     background-image: url(../media/bibliotek-p35-lokaler.webp);
   }
+
+  #parallax-kantine-bilde {
+    /* The image used */
+    background-image: url(../media/kantine.JPG);
+  }
 /*--------------------------------*/
 
 .grid-container>div,
