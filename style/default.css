@@ -101,7 +101,7 @@ is borrowed by .hambuger-toggle-container*/
 }
 
 .default-list a:hover, .hamburger-list a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 }
 
@@ -131,13 +131,6 @@ is borrowed by .hambuger-toggle-container*/
     #burger-toggle:checked~.hamburger-list-container {
         display: block;
     }
-}
-
-.active {
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: 2px;
-    text-decoration-color: black;
 }
 
 /* parallax effekten er hentet fra W3Schools https://www.w3schools.com/howto/howto_css_parallax.asp */
