@@ -16,11 +16,15 @@ TA SPØRSMÅL:
     -   background-color på nav?
 */
 
+/*sets the margin of body to zero to make sure there
+are no gaps on the edges of the page.
+Also defines the font for the whole page*/
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*sets the size of the h1 tags*/
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -138,8 +142,8 @@ is borrowed by .hambuger-toggle-container*/
     }
 }
 
-/* indikerer hvilken side du er inne på i nav baren*/
-
+/* adds a indicator in the navbar that shows
+what page u are on*/
 .active {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
@@ -187,44 +191,61 @@ article {
 
 /*small image*/
 
+/*sets the height of elements with this class.
+used to make images larger when the curser hovers
+over them*/
 .img-hover-effect:hover {
     height: 40vh;
 }
 
+/*Hides thez <input> since it is not in use
+the functinality is only borrowed by image-toggle-container*/
 #image-toggle {
     display: none;
 }
 
-.fa-up-right-and-down-left-from-center {
+.image-toggle-container i {
     padding-right: 300px;
-    display: block;
 }
 
+/*styles a div so its a slightly transparent black div
+that covers the entire screen*/
 .background-overlay {
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 
-    width: 110%;
-    height: 110%;
+    width: 120%;
+    height: 120%;
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+/*makes the cursor a pointer when hovered over to 
+show the user that the element is clickable.
+Also uses the z-index to make sure the toggle button
+always is visible on top and always clickable*/
 .image-toggle-container {
     cursor: pointer;
     z-index: 3;
+    color: green;
 }
 
-.img-small-box {
+/*sets the height of the image*/
+.img-small {
     height: 35vh;
 }
 
+/*hides the big image by default*/
 .img-big-container {
     display: none;
 }
 
-.img-big-box {
+/*sets the z-index so the image is always visible, but
+always under the close button.
+Also centers the image and sets the height depending 
+on the width of the browser window*/
+.img-big {
     z-index: 2;
     position: fixed;
     left: 50%;
@@ -243,8 +264,8 @@ article {
 
 #image-toggle:checked~ .image-toggle-container {
     position: fixed;
-    left: 25px;
-    top: 25px;
+    left: 20px;
+    top: 40px;
     color: red;
 }
 
