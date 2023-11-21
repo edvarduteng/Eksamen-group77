@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name=description
         content="Vi kjørte en accessibility test av forsiden. Her er resultatene vi fikk og hvordan vi forbedret dem">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/default.css">
-<!-- This javascript is used for importing icons from fontawsome.com -->
-        <script src="https://kit.fontawesome.com/b261370eb8.js" crossorigin="anonymous"></script>
+    <!-- This javascript is used for importing icons from fontawsome.com -->
+    <script src="https://kit.fontawesome.com/b261370eb8.js" crossorigin="anonymous"></script>
     <title>Oslomet - Accessibility</title>
 </head>
 
@@ -58,25 +58,34 @@
         <div class="right-box">
             <h2>Resultatet</h2>
             <p>Vi brukte google chrome sin lighthouse accessibility test for å optimalisere nettsiden vår. Dette er
-                resultatet fikk etter vi fiksa tilbakemeldingene til testen</p>
+                resultatet vi fikk etter vi fikset tilbakemeldingene til testen</p>
         </div>
 
         <article class="article-box">
             <h2>Hva vi gjorde:</h2>
-            <p>Vi laget en nettside der vi lagde 5 HTML sider, der de deler på 1 CSS stylesheet. Nettsiden vi lagde ble inspirert av OsloMet sin nettside. Vi brukte 
-            Google chrome sin lighthouse accessibility test for å optimalisere nettsiden vår så bra som mulig. 
-            Var ganske nyttig verktøy og etter at vi rettet feilene som lighthouse accesibility testen anbefalte så fikk vi til slutt 100%. 
-            Vi bestemte oss for å bruke bakgrunnsfarge for å skille h1 teksten fra parallax-effekten på toppen av siden. 
-            Ble brukt ikoner for å gjøre nettsiden mer brukervennlig og lettere å navigere.
-        </p>
+            <p>Vi lagde en nettside med 5 HTML sider, der de deler på 1 CSS stylesheet. Nettsiden vi lagde ble inspirert
+                av OsloMet sin nettside. Vi brukte
+                Google chrome sin lighthouse accessibility test for å optimalisere nettsiden vår så bra som mulig.
+                Dette var et nyttig verktøy og etter at vi rettet feilene som lighthouse accesibility testen anbefalte
+                fikk vi 98% performence, 100% Accessibility, 100% Best Practics og 100% SEO.
+            </p>
+
+            <p>
+                Vi bestemte oss om på forhånd å bruke bakgrunnsfarge for å skille h1 teksten fra parallax-effekten på
+                toppen av siden.
+                vi brukte også bakgrunnsfarge for å skille forskjellige delere av nettsiden fra hverandre.
+                Ikoner fra Font Awesome ble brukt for å gjøre nettsiden mer brukervennlig og lettere å navigere.
+            </p>
+
+            <h2>Hva vi fikset fra accesibility testen:</h2>
 
             <h3>[alt] attributes</h3>
 
             <p>
                 når vi kjørte testen første gang vi fikk beskjed om at "Image elements do not have [alt] attributes".
                 Denne tilbakemeldingen kom av at vi hadde glemt å legge inn [alt] attributes på noen av bildene.
-                [alt] attributes er et element som skal vises hvis elementet ikke kan gengis. Dette er viktig hvis man 
-                for eksempel har et bilde som er relevant som ikke lastes inn. 
+                [alt] attributes er et element som skal vises hvis elementet ikke kan gengis. Dette er viktig hvis man
+                for eksempel har et bilde som er relevant som ikke lastes inn.
             </p>
 
             <h3>Contrast ratio</h3>
@@ -84,32 +93,46 @@
             <p>
                 Vi fikk også beskjed om at "Background and foreground colors do not have a sufficient contrast ratio".
                 Dette var fordi vi hadde lys tekst på en lys bakgrunn og var lett og fikse ved å endre tekst fargen til
-                en mørkere farge. Dette kan spesielt være viktig hvis eldre personer som allerede har et problem med data
-                må navigere en nettside hvor det er vanskelig å se hva som er hva og å finne fram. 
+                en mørkere farge. Dette kan spesielt være viktig hvis eldre personer som allerede har et problem med
+                data
+                må navigere en nettside hvor det er vanskelig å se hva som er hva og å finne fram.
             </p>
 
             <h3>Image sizes</h3>
 
             <p>
-                Bildene våre var ikke "properly sized". Altså bildene var mye større enn det vi trengte. 
+                Bildene våre var ikke "properly sized". Altså bildene var mye større enn det vi trengte.
                 Vi løste dette ved å nedskalere bildene. Vi brukte Pixlr for å fikse dette ved å gjøre om på
                 størrelsen av bildet i px eller pixler. Dette gjør blant annet at bildet tar mindre plass,
                 det blir ett problem hvis et bilde tar mer plass enn nødvendig. Et viktig aspekt ved å lage en
                 proffesjonell nettside er at man ikke bruker mer tid og data på å laste inn en nettside enn nødvendig.
-                Dette kan potensielt sett gjøre at nettsiden er treg. Dette og lang nedlastingshastighet kan 
+                Dette kan potensielt sett gjøre at nettsiden er treg. Dette og lang nedlastingshastighet kan
                 for eksempel gjøre at en potensiell kunde blir i dårlig humør før de i det hele tatt har sett siden.
 
 
             </p>
 
-            
+
             <h3>next gen format images</h3>
 
             <p>
                 Vi brukte jpg format på bildene. Dette er et format som ikke er optimalisert for internett.
-                Vi endret derfor filtypen til WebP. Dette er en filtype som er optimalisert for internett. 
+                Vi endret derfor filtypen til WebP. Dette er en filtype som er optimalisert for internett.
                 Dette er viktig av de samme grunnene som nevnt over i avsnittet "image sizes".
             </p>
+
+            <h2>Testing av nettside</h2>
+
+            <p>Slev om en accesibility test er veldig bra for å teste accesibilityen til en nettside, er det fortsatt
+                viktig og teste den selv. Vi fikk derfor venner og familie til å teste siden vår for å finne ut om den
+                er brukervennelig.
+            </p>
+
+            <p>
+                Ved å få mennesker fra forskjellige aldersgrupper til å teste nettsiden vår, fant vi fort ut av hva som funka og ikke funka.
+                Dette ga oss svar på om tekststørrelse, font, grid-lauout og navbaren er brukervennelig og hva vi må endre på.
+            </p>
+
         </article>
 
         <div class="bottom-box">
@@ -168,4 +191,5 @@
         </div>
     </footer>
 </body>
+
 </html>
