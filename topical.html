@@ -4,25 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name=description
-        content="Analysis about the potential benefits and challenges of satellite internet, focusing on Starlink as an example">
+        content="Få en dagsrelevant utdanning ved OsloMet. Et universitetet i Oslo kjent for god utdanning og bra sosialt miljø. Utforsk programmene våre og studer ved en skole dedikert til å leverer kunnskap som løser samfunnets utfordringer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/default.css">
 
     <!-- This javascript is used for importing icons from fontawsome.com -->
-    <script src="https://kit.fontawesome.com/b261370eb8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b261370eb8.js" crossorigin="anonymous" defer></script>
     <title>Oslomet - Topical</title>
 </head>
 
 <body>
     <header>
+        <!--This is not visible, it is only here for its functionalty later-->
         <input id="burger-toggle" type="checkbox">
+        
         <nav class="navbar">
+            <!-- this label borrows the functunality of the <input> 
+                element "burger-toggle" -->
             <label class="hamburger-toggle-container" for="burger-toggle">
-                <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
+                <i class="fa-solid fa-bars fa-2xl"></i>
             </label>
+            <!--Here is the navbar visible by default, I have made a seperate list for 
+                the hamburger menu below in order to tidy up the code-->
             <ul class="default-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="topical.html" class="active">Topical</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="topical.html">Topical</a></li>
                 <li><a href="accessibility.html">Accessibility</a></li>
                 <li><a href="bibliotek.html">Bibliotek</a></li>
                 <li><a href="kantine.html">Kantine</a></li>
@@ -30,11 +36,12 @@
             <a href="index.html" class="nav-logo"><img src="media/oslomet-logo.webp" alt="OsloMet logo"></a>
         </nav>
 
-        <!-- I have put this outside tha <nav> tag because it has position absoulute and therefore does not work inside the nav tag -->
+        <!-- I have put this outside tha <nav> tag because it has position absoulute 
+            and therefore does not work inside the nav tag -->
         <div class="hamburger-list-container">
             <ul class="hamburger-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="topical.html" class="active">Topical</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="topical.html">Topical</a></li>
                 <li><a href="accessibility.html">Accessibility</a></li>
                 <li><a href="bibliotek.html">Bibliotek</a></li>
                 <li><a href="kantine.html">Kantine</a></li>
@@ -42,6 +49,7 @@
         </div>
 
     </header>
+    <!--Here starts the main grid-->
     <main class="grid-container">
 
         <div class="top-box">
@@ -65,7 +73,9 @@
         </div>
 
         <!-- Word definitions are linked by clicking the text itself, while big chunks of facts 
-        and information are linked by refering to the refrence list-->
+        and information are linked by refering with a number to the refrence list.
+        I have used the <sup> tag to seperate the links/numbers from the tekst for a more userfriendly
+        experience.-->
         <article class="article-box">
             <h1>Overcoming the limitations of cabels</h1>
             <p>
@@ -193,6 +203,7 @@
             </ol>
         </article>
         <div class="bottom-box">
+            <!-- The <i> tags are getting icons from the <script> by fontawsome at the top-->
             <div class="bottom-icon">
                 <a href="index.html">Home</a>
                 <i class="fa-solid fa-house fa-2xl"></i>
@@ -216,6 +227,8 @@
     </main>
 
     <footer>
+        <!--I have split "footer-left" into two list because I am using the <hr> tag as divider
+        and I cant have that inside a <ul></ul> tag-->
         <div class="footer-left">
             <ul>
                 <li>OSLO METROPOLITAN UNIVERSITY</li>
@@ -230,6 +243,7 @@
         </div>
         <div class="footer-middle">
             <ul>
+                <!-- The <i> tags are getting icons from the <script> by fontawsome at the top-->
                 <li><a href="https://www.facebook.com/oslomet/"><i class="fa fa-facebook-official"></i>Facebook</a></li>
                 <li><a href="https://twitter.com/oslomet">X</a></li>
                 <li><a href="https://no.linkedin.com/school/oslomet/"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
@@ -248,4 +262,5 @@
         </div>
     </footer>
 </body>
+
 </html>

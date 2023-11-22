@@ -4,46 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name=description
-        content="Bibliotekene på OsloMet har mange gode kvaliteter. Vi har et strot utvalg bøker eller trenger du bare et stille sted å lese? Vi har flere store biblioteker som vi tilbyr våre elever.">
+        content="Få en dagsrelevant utdanning ved OsloMet. Et universitetet i Oslo kjent for god utdanning og bra sosialt miljø. Utforsk programmene våre og studer ved en skole dedikert til å leverer kunnskap som løser samfunnets utfordringer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/default.css">
 
     <!-- This javascript is used for importing icons from fontawsome.com -->
-    <script src="https://kit.fontawesome.com/b261370eb8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b261370eb8.js" crossorigin="anonymous" defer></script>
     <title>Oslomet - Bibliotek</title>
 </head>
 
-<body>      
+<body>
     <header>
+        <!--This is not visible, it is only here for its functionalty later-->
         <input id="burger-toggle" type="checkbox">
+        
         <nav class="navbar">
+            <!-- this label borrows the functunality of the <input> 
+                element "burger-toggle" -->
             <label class="hamburger-toggle-container" for="burger-toggle">
-                <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
+                <i class="fa-solid fa-bars fa-2xl"></i>
             </label>
+            <!--Here is the navbar visible by default, I have made a seperate list for 
+                the hamburger menu below in order to tidy up the code-->
             <ul class="default-list">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="topical.html">Topical</a></li>
                 <li><a href="accessibility.html">Accessibility</a></li>
-                <li><a href="bibliotek.html" class="active">Bibliotek</a></li>
+                <li><a href="bibliotek.html">Bibliotek</a></li>
                 <li><a href="kantine.html">Kantine</a></li>
             </ul>
             <a href="index.html" class="nav-logo"><img src="media/oslomet-logo.webp" alt="OsloMet logo"></a>
         </nav>
 
-        <!-- I have put this outside tha <nav> tag because it has position absoulute and therefore does not work inside the nav tag -->
+        <!-- I have put this outside tha <nav> tag because it has position absoulute 
+            and therefore does not work inside the nav tag -->
         <div class="hamburger-list-container">
             <ul class="hamburger-list">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="topical.html">Topical</a></li>
                 <li><a href="accessibility.html">Accessibility</a></li>
-                <li><a href="bibliotek.html" class="active">Bibliotek</a></li>
+                <li><a href="bibliotek.html">Bibliotek</a></li>
                 <li><a href="kantine.html">Kantine</a></li>
             </ul>
         </div>
 
     </header>
+    <!--Here starts the main grid-->
     <main class="grid-container">
-
+        <!-- the parallax effect is given its own id in order to use the same css on 
+            every page and still be able to have a different image-->
         <div class="top-box parallax" id="parallax-bibliotek-bilde">
             <div class="heading-container">
                 <h1>Bibliotek</h1>
@@ -147,6 +156,7 @@
         </article>
 
         <div class="bottom-box">
+            <!-- The <i> tags are getting icons from the <script> by fontawsome at the top-->
             <div class="bottom-icon">
                 <a href="index.html">Home</a>
                 <i class="fa-solid fa-house fa-2xl"></i>
@@ -170,6 +180,8 @@
     </main>
 
     <footer>
+        <!--I have split "footer-left" into two list because I am using the <hr> tag as divider
+        and I cant have that inside a <ul></ul> tag-->
         <div class="footer-left">
             <ul>
                 <li>OSLO METROPOLITAN UNIVERSITY</li>
@@ -184,6 +196,7 @@
         </div>
         <div class="footer-middle">
             <ul>
+                <!-- The <i> tags are getting icons from the <script> by fontawsome at the top-->
                 <li><a href="https://www.facebook.com/oslomet/"><i class="fa fa-facebook-official"></i>Facebook</a></li>
                 <li><a href="https://twitter.com/oslomet">X</a></li>
                 <li><a href="https://no.linkedin.com/school/oslomet/"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
@@ -202,4 +215,5 @@
         </div>
     </footer>
 </body>
+
 </html>
