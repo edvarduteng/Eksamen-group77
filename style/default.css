@@ -184,6 +184,40 @@ https://www.w3schools.com/howto/howto_css_parallax.asp*/
     background-image: url(../media/kantine-p35.webp);
   }
 
+  @media (max-width: 800px) {
+    #parallax-index-bilde {
+        /*The image used*/
+        background-image: url(../media/bygg-p32.webp);
+      }
+    
+      #parallax-bibliotek-bilde {
+        /*The image used*/
+        background-image: url(../media/bibliotek-p35-lokaler.webp);
+      }
+    
+      #parallax-kantine-bilde {
+        /*The image used*/
+        background-image: url(../media/kantine-p35.webp);
+      }
+}
+
+@media (max-width: 800px) {
+    #parallax-index-bilde {
+        /*The image used*/
+        background-image: url(../media/bygg-p32.webp);
+      }
+    
+      #parallax-bibliotek-bilde {
+        /*The image used*/
+        background-image: url(../media/bibliotek-p35-lokaler.webp);
+      }
+    
+      #parallax-kantine-bilde {
+        /*The image used*/
+        background-image: url(../media/kantine-p35.webp);
+      }
+}
+
 /*-----------GRID----------------*/
 
 .grid-container>div,
