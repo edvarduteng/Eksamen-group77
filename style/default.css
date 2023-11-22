@@ -170,7 +170,7 @@ https://www.w3schools.com/howto/howto_css_parallax.asp*/
   }
 
   /*sets a picture that fits the screen width for the parallax effect*/
-@media (min-width: 1px) and (max-width: 480px) {
+@media (max-width: 720px) {
     #parallax-index-bilde {
         background-image: url(../media/bygg-p32-720.webp);
     }
@@ -181,7 +181,7 @@ https://www.w3schools.com/howto/howto_css_parallax.asp*/
         background-image: url(../media/kantine-p35-720.webp);
     }
 }
-@media (min-width: 481px) and (max-width: 1080px) {
+@media (min-width: 721px) and (max-width: 1080px) {
     #parallax-index-bilde {
         background-image: url(../media/bygg-p32-1080.webp);
     }
