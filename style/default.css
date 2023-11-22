@@ -169,40 +169,39 @@ https://www.w3schools.com/howto/howto_css_parallax.asp*/
     background-size: cover;
   }
 
-  @media (min-width: 1px) and (max-width: 480px) {
+  /*sets a picture that fits the screen width for the parallax effect*/
+@media (min-width: 1px) and (max-width: 480px) {
     #parallax-index-bilde {
         background-image: url(../media/bygg-p32-480.webp);
-      }
-      #parallax-bibliotek-bilde {
+    }
+    #parallax-bibliotek-bilde {
         background-image: url(../media/bibliotek-p35-lokaler-480.webp);
-      }
-      #parallax-kantine-bilde {
+    }
+    #parallax-kantine-bilde {
         background-image: url(../media/kantine-p35-480.webp);
-      }
+    }
 }
-
-  @media (min-width: 481px) and (max-width: 1080px) {
+@media (min-width: 481px) and (max-width: 1080px) {
     #parallax-index-bilde {
         background-image: url(../media/bygg-p32-1080.webp);
-      }
-      #parallax-bibliotek-bilde {
+    }
+    #parallax-bibliotek-bilde {
         background-image: url(../media/bibliotek-p35-lokaler-1080.webp);
-      }
-      #parallax-kantine-bilde {
+    }
+    #parallax-kantine-bilde {
         background-image: url(../media/kantine-p35-1080.webp);
-      }
+    }
 }
-
 @media (min-width: 1080px) and (max-width: 1920px) {
     #parallax-index-bilde {
         background-image: url(../media/bygg-p32-1920.webp);
-      }
+    }
       #parallax-bibliotek-bilde {
         background-image: url(../media/bibliotek-p35-lokaler-1920.webp);
-      }
-      #parallax-kantine-bilde {
+    }
+    #parallax-kantine-bilde {
         background-image: url(../media/kantine-p35-1920.webp);
-      }
+    }
 }
 
 /*-----------GRID----------------*/
