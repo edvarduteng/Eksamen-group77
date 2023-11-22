@@ -169,7 +169,7 @@ https://www.w3schools.com/howto/howto_css_parallax.asp*/
     background-size: cover;
   }
 
-  /*sets a picture that fits the screen width for the parallax effect*/
+  /*sets a picture that fits the screen width for the parallax effect background-image*/
 @media (max-width: 720px) {
     #parallax-index-bilde {
         background-image: url(../media/bygg-p32-720.webp);
