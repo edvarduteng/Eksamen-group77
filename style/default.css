@@ -204,8 +204,6 @@ https://www.w3schools.com/howto/howto_css_parallax.asp*/
     }
 }
 
-/*-----------GRID----------------*/
-
 .grid-container>div,
 article {
     padding: 40px;
@@ -213,6 +211,11 @@ article {
 
 #references-list li {
     padding: 10px;
+}
+
+.img-accesibility {
+    width: 70vw;
+    max-width: 500px;
 }
 
 
