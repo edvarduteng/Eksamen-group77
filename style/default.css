@@ -238,7 +238,8 @@ the functinality is only borrowed by image-toggle-container*/
 
 /*pushes the enlarge symbol to the corner of the picture*/
 .image-toggle-container i {
-    padding-right: 300px;
+    position: absolute;
+    left: 10px;
 }
 
 /*styles a div so its a slightly transparent black div
@@ -265,6 +266,10 @@ always is visible on top and always clickable*/
     cursor: pointer;
     z-index: 4;
     color: green;
+}
+
+.image-toggle-container:hover {
+    color: black;
 }
 
 /*sets the height and aspect ratio of the image in order 
@@ -310,6 +315,10 @@ closes the image, and repositions it a more fitting place*/
     left: 20px;
     top: 40px;
     color: red;
+}
+
+#image-toggle:checked~ .image-toggle-container:hover {
+    color: white;
 }
 
 /*main-grid*/
