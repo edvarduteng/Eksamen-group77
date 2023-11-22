@@ -11,7 +11,7 @@ h1 {
     font-size: 2.5rem;
 }
 
-/* adds a line under all h2 tags*/
+/*adds a line under all h2 tags*/
 h2 {
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -26,7 +26,7 @@ hr {
     width: 90%;
 }
 
-/* centers the element horizontally and sets its height 
+/*centers the element horizontally and sets its height 
 depending on the browser windows height*/
 .heading-container {
     width: 50vw;
@@ -39,6 +39,7 @@ depending on the browser windows height*/
 }
 
 /*----NAVBAR----*/
+
 /*hides the <input> element since its functionality 
 is borrowed by .hambuger-toggle-container*/
 #burger-toggle {
@@ -71,6 +72,7 @@ in a flex. also styles the links*/
     padding: 0;
     list-style-type: none;
 }
+
 /*sorts its children in a vertical flex box.*/
 .hamburger-list {
     display: flex;
@@ -80,13 +82,14 @@ in a flex. also styles the links*/
     padding-left: 22vw;
 }
 
-/* Adds padding and background color from the list. 
+/*Adds padding and background color from the list. 
 Removes dots on the <ul> tag*/
 .hamburger-list li {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.85);
     list-style-type: none;
 }
+
 /*centers and scales the links aswell as
 removing the default <a> tag styling*/
 .default-list a, .hamburger-list a {
@@ -112,6 +115,7 @@ appear behind the heading*/
     position: absolute;
     z-index: 1;
 }
+
 /*Hides the hamburger toggle icon by default*/
 .hamburger-toggle-container {
     display: none;
@@ -141,23 +145,24 @@ appear behind the heading*/
     }
 }
 
-/* adds a indicator in the navbar that shows
+/*adds a indicator in the navbar that shows
 what page u are on*/
 .active {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 }
 
-/*----------Parallax effect-----------------
-parallax effekten er hentet fra W3Schools 
-https://www.w3schools.com/howto/howto_css_parallax.asp */
+/*----------Parallax effect-----------------*/
+
+/*parallax effekten er hentet fra W3Schools 
+https://www.w3schools.com/howto/howto_css_parallax.asp*/
 
 .parallax {
   
-    /* Full height */
+    /*Full height*/
     height: 100%; 
   
-    /* Create the parallax scrolling effect */
+    /*Create the parallax scrolling effect*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -165,19 +170,20 @@ https://www.w3schools.com/howto/howto_css_parallax.asp */
   }
 
   #parallax-index-bilde {
-    /* The image used */
+    /*The image used*/
     background-image: url(../media/bygg-p32.webp);
   }
 
   #parallax-bibliotek-bilde {
-    /* The image used */
+    /*The image used*/
     background-image: url(../media/bibliotek-p35-lokaler.webp);
   }
 
   #parallax-kantine-bilde {
-    /* The image used */
+    /*The image used*/
     background-image: url(../media/kantine-p35.webp);
   }
+
 /*-----------GRID----------------*/
 
 .grid-container>div,
@@ -204,6 +210,7 @@ the functinality is only borrowed by image-toggle-container*/
 #image-toggle {
     display: none;
 }
+
 /*pushes the enlarge symbol to the corner of the picture*/
 .image-toggle-container i {
     padding-right: 300px;
@@ -212,8 +219,7 @@ the functinality is only borrowed by image-toggle-container*/
 /*styles a div so its a slightly transparent black div
 that covers the entire screen.
 sets the z-index to 2 so it appears between the hamburger
-list and the big picture
-*/
+list and the big picture*/
 .black-background {
     z-index: 2;
     position: fixed;
@@ -281,7 +287,7 @@ closes the image, and repositions it a more fitting place*/
     color: red;
 }
 
-/* main-grid */
+/*main-grid*/
 .top-box {
     grid-column: 1/5;
     grid-row: 1/2;
@@ -294,8 +300,7 @@ closes the image, and repositions it a more fitting place*/
 /*tells the box to fill the left side of the grid and go
 between grid line 2 and 3 under top-box and over article-box.
 Also sorts its children in a vertical flex box so the
-image credits and the image stays together.
-*/
+image credits and the image stays together.*/
 .left-box {
     grid-column: 1/3;
     grid-row: 2/3;
@@ -310,7 +315,7 @@ image credits and the image stays together.
     align-items: center;
 }
 
-/* specifies article-box's position in the grid so it spans
+/*specifies article-box's position in the grid so it spans
 over the whole width and lays in the row under right-box &
 left-box and over bottom-box.
 It also forces space between the edges and the content 
@@ -325,6 +330,7 @@ of the box*/
 }
 
 /*----bottom boxes----*/
+
 /*specifies bottom-box's grid positions so its in the bottom
 row and spans the whole width
 It also makes its child elements display in a horizontal 
@@ -342,8 +348,7 @@ flex box*/
 
 /*Grid adjustements when page is less than 800px.
 Makes the right box lie under the left box instead of next to
-and enforces the grid.
-*/
+and enforces the grid.*/
 @media (max-width: 800px) {
     .right-box {
         grid-column: 3/5;
@@ -378,14 +383,15 @@ flex box*/
     background-color: rgb(231, 231, 231);
 }
 
-/* adds a shadow and runs a 1sec long animation once. */
+/*adds a shadow and runs a 1sec long animation once.*/
 .bottom-icon:hover {
     box-shadow: 0px 0px 100px rgb(58, 58, 58);
 
     animation: rotate 1s;
     animation-iteration-count: 1;
 }
-/* specifies all the positions and rotations of the animation
+
+/*specifies all the positions and rotations of the animation
 (the similiar values are combined to take less space and 
 easier to adjust)*/
 @keyframes rotate {
@@ -394,7 +400,7 @@ easier to adjust)*/
     30%, 50%, 70%, 90% { transform: translate(4px, 3px) rotate(0deg); }
 }
 
-/* centers the <a> tag and makes it cover its parent. */
+/*centers the <a> tag and makes it cover its parent.*/
 .bottom-box a {
     position: absolute;
     width: 100%;
@@ -414,7 +420,7 @@ easier to adjust)*/
     padding-bottom: 40px;
 }
 
-/* -------Footer grid------- */
+/*-------Footer grid-------*/
 footer {
     background-color: rgb(0, 132, 255);
 }
@@ -427,6 +433,7 @@ footer li {
 footer a {
     color: black;
 }
+
 /*makes the div take the space to the left in the grid
 and lie next to the others*/
 .footer-left {
