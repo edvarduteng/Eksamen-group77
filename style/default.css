@@ -213,8 +213,10 @@ article {
     padding: 10px;
 }
 
+/*fits the images on the accesibility page according to screen width*/
 .img-accesibility {
     width: 70vw;
+    height: auto; 
     max-width: 500px;
 }
 
@@ -270,7 +272,7 @@ to set an explicit width and height on image elements
 to reduce layout shifts and improve CLS.*/
 .img-small {
     height: 35vh;
-    aspect-ratio: 1.33;
+    aspect-ratio: auto;
 }
 
 /*hides the big image by default*/
