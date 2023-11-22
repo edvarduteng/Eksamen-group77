@@ -310,8 +310,11 @@ image credits and the image stays together.
     align-items: center;
 }
 
-/* specifies article-box's position in the grid and forces 
-space between the edges and the content of the box*/
+/* specifies article-box's position in the grid so it spans
+over the whole width and lays in the row under right-box &
+left-box and over bottom-box.
+It also forces space between the edges and the content 
+of the box*/
 .article-box {
     grid-column: 1/5;
     grid-row: 3/4;
@@ -322,8 +325,10 @@ space between the edges and the content of the box*/
 }
 
 /*----bottom boxes----*/
-/*specifies bottom-box's grid positions and makes its child 
-elements display in a horizontal flex box*/
+/*specifies bottom-box's grid positions so its in the bottom
+row and spans the whole width
+It also makes its child elements display in a horizontal 
+flex box*/
 .bottom-box {
     grid-column: 1/5;
     grid-row: 4/5;
@@ -335,7 +340,10 @@ elements display in a horizontal flex box*/
     align-content: center;
 }
 
-/*Grid adjustements when page is less than 800px*/
+/*Grid adjustements when page is less than 800px.
+Makes the right box lie under the left box instead of next to
+and enforces the grid.
+*/
 @media (max-width: 800px) {
     .right-box {
         grid-column: 3/5;
@@ -411,6 +419,7 @@ footer {
     background-color: rgb(0, 132, 255);
 }
 
+/*Removes dots from the list*/
 footer li {
     list-style-type: none;
     padding: 14px;
@@ -418,7 +427,8 @@ footer li {
 footer a {
     color: black;
 }
-/**/
+/*makes the div take the space to the left in the grid
+and lie next to the others*/
 .footer-left {
     grid-column: 1/2;
     grid-row: 1;
@@ -426,8 +436,11 @@ footer a {
     display: table-cell;
 }
 
+/*Forces the divs under eachother when the windows is less
+than 800px wide*/
 @media (min-width: 800px) {
-
+    /*makes the div take the space in the middle of the grid
+    and lie next to the others*/
     .footer-middle {
         grid-column: 2/3;
         grid-row: 1;
@@ -435,6 +448,8 @@ footer a {
         display: table-cell;
     }
 
+    /*makes the div take the space to the right in the grid
+    and lie next to the others*/
     .footer-right {
         grid-column: 3/4;
         grid-row: 1;
@@ -442,11 +457,7 @@ footer a {
         display: table-cell;
     }
 
-}
-
-/*Defines the footer grid */
-
-@media (min-width: 800px) {
+    /*Defines the footer grid */
     footer {
         display: grid;
         grid-template-columns: minmax(200px, 20vw) minmax(200px, 20vw) minmax(200px, 20vw) auto;
@@ -455,4 +466,5 @@ footer a {
         table-layout: fixed;
         border-spacing: 20px;
     }
+
 }
