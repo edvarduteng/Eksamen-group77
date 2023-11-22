@@ -414,7 +414,7 @@ easier to adjust)*/
     padding-bottom: 40px;
 }
 
-/* FOOTER */
+/* -------Footer grid------- */
 footer {
     background-color: rgb(0, 132, 255);
 }
@@ -466,5 +466,4 @@ than 800px wide*/
         table-layout: fixed;
         border-spacing: 20px;
     }
-
 }
