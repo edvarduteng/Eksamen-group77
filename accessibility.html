@@ -18,7 +18,7 @@
     <header>
         <!--This is not visible, it is only here for its functionalty later-->
         <input id="burger-toggle" type="checkbox">
-        
+
         <nav class="navbar">
             <!-- this label borrows the functunality of the <input> 
                 element "burger-toggle" -->
@@ -122,20 +122,18 @@
                 for eksempel gjøre at en potensiell kunde blir i dårlig humør før de i det hele tatt har sett siden.
             </p>
 
-            <h3>Back/forward cache restoration</h3>
-
-            <p>
-                Bildene på parallax effekten var ikke riktig størrelse dette førte til denne tilbakemeldingen "Page
-                prevented back/forward cache restoration". Dette førte til at cache ble full pga. bilde på parallax
-                effekten fylte hele cachen. Dette løste vi ved å gjøre bildene mindre i et redigeringsprogram.
-            </p>
-
             <h3>Next gen format images</h3>
 
             <p>
                 Vi brukte jpg format på bildene. Dette er et format som ikke er optimalisert for internett.
                 Vi endret derfor filtypen til WebP. Dette er en filtype som er optimalisert for internett.
                 Dette er viktig av de samme grunnene som nevnt over i avsnittet "image sizes".
+            </p>
+
+            <h3>Parallax bilde størrelse</h3>
+            <p>
+                Vi brukte @media rule på parallax effekt bildene våre slik at mobil brukere og andre brukere med mindre
+                skjermer, slipper å laste ned store bilde på en mobilskjerm eller liknende.
             </p>
 
             <h2>Testing av nettside</h2>
